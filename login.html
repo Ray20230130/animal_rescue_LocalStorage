@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/ddoogg.ico" type="image/x-icon">
+  <title>後台管理系統 - 登入</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/back_style.css">
+  <script src="https://kit.fontawesome.com/709b8293ad.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <!-- 全體外皮 -->
+  <div class="mainWrap">
+
+    <!-- 001 - 搜尋列 NavBar (Bootstrap) -->
+    <script src="./js/NavBar_content.js"></script>
+
+    <!-- 002 - 登入表格 -->
+    <section class="section_login02">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="content">
+
+              <h1>員工帳號登入</h1>
+
+                <div class="item">
+                  <label for="username">帳號</label>
+                  <input type="text" id="username" class="form-control" name="username" placeholder="前端頁面顯示用">
+                </div>
+                <div class="item">
+                  <label for="passwd">密碼</label>
+                  <input type="text" id="passwd" class="form-control" name="passwd" placeholder="直接按登入即可跳轉到後台">
+                </div>
+                <div class="btn-item">
+                  <button class="btn btn-outline-dark btn-submit">登入</button>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- 005 - footer -->
+    <script src="./js/footer_content.js"></script>
+
+  </div>
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="./js/B_addnews.js"></script>
+  <script>
+
+    let loginBtn = document.querySelector(".btn-item button");
+    loginBtn.addEventListener("click",function(){
+      window.location.href = "./back_news.html";
+    })
+
+  </script>
+
+
+</body>
+
+</html>
